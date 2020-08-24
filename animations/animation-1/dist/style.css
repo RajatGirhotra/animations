@@ -1,0 +1,104 @@
+.circle-wrapper-0 {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 10px;
+}
+
+.circle-wrapper {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 10px;
+}
+
+
+.pulse {
+    background-color:#c9c6bd;
+    
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    align-content: center;
+    display:flex;
+    border-radius:20px; 
+    animation: glowing 1.5s linear infinite;
+}
+
+
+.circle-0 {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin: 10px;
+  
+}
+
+.icon {
+  position: absolute;
+  color: black;
+  font-size: 55px;
+  top: 55px;
+  left: 55px;
+  transform: translate(-50%, -50%);
+}
+
+#circle {
+  display: block;
+  width: 50px;
+  height: 50px;
+  color: black;
+  padding: 2.5px;
+  background-clip: content-box;
+  animation: spin1 2s linear forwards;
+  display: none;
+}
+
+.circle-wrapper:active .circle {
+  animation: spin1 2s linear forwards;
+}
+
+.success {
+  background-color: white;
+  border: 2.5px dashed red;
+}
+
+
+
+@keyframes spin1 { 
+  90%{
+    border-radius: 10%;
+    transform: rotate(360deg);
+    }
+  
+  95%{
+    background-color:green;
+    border: none;
+    border-radius: 10%;
+}
+  100%{
+    border-radius: 50%;
+    color:black;
+  }
+}
+
+.page-wrapper {
+  height: 100vh;
+  background-color: ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@keyframes glowing {
+  0% { box-shadow: 0 0 0 black; }
+  50% { box-shadow: 0 0 200px black; }
+  51% { box-shadow: 0 0 500px black; }
+  
+  100% { box-shadow: 0 0 900px black; }
+}
